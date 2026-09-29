@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HavenCast Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 760px; margin: 0 auto; padding: 28px 20px 64px;
+    font: 16px/1.8 -apple-system, "Segoe UI", Arial, sans-serif;
+    color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #0f1115; }
+    a { color: #8ab4f8; }
+    .note { background: #1b1f26; border-color: #2a3038; }
+    hr { border-color: #2a3038; }
+  }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 30px 0 8px; }
+  .meta { color: #5f6368; font-size: 13px; margin-bottom: 8px; }
+  ul { padding-left: 22px; }
+  .note {
+    background: #f6f7f9; border: 1px solid #e3e6ea; border-radius: 10px;
+    padding: 12px 14px; font-size: 14px; margin: 18px 0;
+  }
+  hr { border: none; border-top: 1px solid #e3e6ea; margin: 28px 0; }
+</style>
+</head>
+<body>
+
+<h1>HavenCast Privacy Policy</h1>
+<p class="meta">Effective date: September 28, 2026 (this revision adds Firebase Crashlytics and Analytics data-handling information)</p>
+
+<p>HavenCast is an app for discovering, browsing, and controlling DLNA/UPnP media devices on a home local network. This policy explains what information the app processes and how it is handled.</p>
+
+<div class="note">
+  This page is the full privacy policy displayed in the HavenCast app-store listing. It is intended to match the policy shown under More → About &amp; Feedback → Privacy Policy in the app. If the two versions differ, this page governs until the in-app text is updated.
+</div>
+
+<h2>1. Accounts and uploads</h2>
+<p>HavenCast does not require an account and has no sign-in feature. The app does not actively upload your personal information, media files, or playback history to the developer's servers. The app keeps encrypted diagnostic logs in its private app storage to investigate runtime errors. Logs do not contain media file contents, but may include timestamps, app version, device model, local-network addresses, device names, media titles, and network request results. The developer receives a log only when you choose to attach it to feedback or export and send it yourself. You choose how to send in-app feedback, such as by email or the Android share sheet; HavenCast does not upload feedback automatically.</p>
+
+<h2>2. Advertising and third-party SDKs</h2>
+<p>The current version briefly displays a banner ad supplied by Google AdMob at the top of the Library page. The banner is hidden after it has been visible for 10 seconds. Ads are loaded by the Google Mobile Ads SDK. Google may collect and process the following information for ad delivery, frequency control, and performance measurement:</p>
+<ul>
+  <li>Advertising identifiers, including the Android advertising ID</li>
+  <li>IP address and an approximate region inferred from it</li>
+  <li>Device information, such as device model, operating-system version, screen size, and language</li>
+  <li>Ad impression and click events</li>
+</ul>
+<p>Google processes this information under its own privacy policy. See <a href="https://policies.google.com/technologies/ads" rel="noopener">Google's advertising privacy information</a>. HavenCast does not receive or store this information. The app does not provide your media-library contents, playback history, or local-network device information to the advertising SDK.</p>
+<p>In regions where consent is required, such as the European Economic Area and the United Kingdom, the app uses Google's User Messaging Platform (UMP) to request consent before showing ads. Declining consent does not affect app features; ads are simply not shown. You may use Android system settings to reset or delete the advertising ID or disable ad personalization.</p>
+<p>The app uses the Google Cast SDK to discover and connect to Cast receivers, including Chromecast and Google TV, on the same local network. The Cast SDK sends anonymized device-discovery events, session-management events, mobile-device information, and client Cast app information to a Google log-collection server over an encrypted connection. Google uses the aggregated data to understand Cast SDK adoption, performance, and defects. Google states that these logs contain no identifiers traceable to a specific user, are not used to model a specific user's behavior, are not shared with third parties or other apps on the device, and are retained only briefly before aggregation and deletion. Neither the app developer nor the user can opt out of or separately delete this SDK data. See <a href="https://developers.google.com/cast/docs/android_sender/data_disclosure" rel="noopener">Google Cast SDK data disclosure</a>.</p>
+<p>The app uses Google Firebase Crashlytics to automatically collect crash and app-not-responding reports to diagnose defects and measure stability. Reports may contain exception messages and stack traces, relevant app state, app and OS versions, device information, and a Crashlytics installation identifier. Firebase Installations and Firebase Sessions are dependencies of this feature and also process installation identifiers and session-related information. Reports are sent to Google and can be viewed by the developer in the Firebase console. The app does not intentionally attach media files, playback history, locally encrypted diagnostic logs, user identifiers, or custom events to Crashlytics. Exception messages returned by a device or media server may still contain text or addresses supplied by that device. Crash reporting is separate from the advertising-consent flow. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a> and <a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener">Firebase data disclosure</a>.</p>
+<p>The app also uses Google Analytics for Firebase to measure basic usage. The SDK automatically logs first opens, app launches, sessions, and screen views, and processes an app-instance identifier, device and OS information, and an approximate region inferred from network information. This helps summarize active users and usage trends. The app disables Android Advertising ID collection by Analytics. It currently does not send media titles, playback history, search terms, local-network device information, user identifiers, or custom events to Analytics. Analytics data is sent to Google; the developer can view aggregated reports in Firebase and Google Analytics. Crashlytics reports may include breadcrumbs based on these automatically collected events. Analytics collection is separate from the advertising-consent flow. See <a href="https://support.google.com/firebase/answer/6318039" rel="noopener">Firebase data collection information</a> and <a href="https://support.google.com/analytics/answer/11582702" rel="noopener">Analytics data disclosure</a>.</p>
+
+<h2>3. Device and local-network information</h2>
+<p>To discover and control media servers, TVs, and speakers on the same local network, the app sends and receives SSDP and DLNA/UPnP traffic over Wi-Fi or the local network and communicates with devices over HTTP. Many DLNA/UPnP devices use unencrypted HTTP. The security of this traffic depends on your local network and target devices, so use the app only on networks you trust.</p>
+<p>The app processes names, models, network addresses, service addresses, device identifiers, and media-directory information supplied by devices on the local network. This information is used to display devices, browse media, and perform playback controls.</p>
+<p>When you add an SMB network share, the app connects to the host, share, and directory you entered for read-only media browsing and playback. The user name, domain, and password are stored only on the device in encrypted form protected by Android Keystore and are excluded from system cloud backup and device migration. They are not uploaded or written into the media index, playback history, or temporary playback links. When media is sent to a local-network device, the app exposes only a random temporary address that contains no credentials.</p>
+
+<h2>4. Media on this phone</h2>
+<p>When you choose to build the phone-music index, the app requests permission to read audio-media information from Android MediaStore. The app uses this information to build a local index so it can display and play music stored on your device. The current version does not request access to all files.</p>
+
+<h2>5. Data stored locally</h2>
+<p>To remain useful the next time it is opened, the app stores necessary data in its private device storage. This may include discovered-device information, device favorites and aliases, the playback queue, playback history, the previous session state, media-index metadata, and whether ads have been removed. HavenCast uses this data for on-device features and does not actively upload it.</p>
+
+<h2>6. Casting media</h2>
+<p>When you choose to cast media to a DLNA or Google Cast playback device, the app sends the selected receiver the media playback address and playback metadata such as the title, artist, and artwork so that the receiver can retrieve and play the media. For media stored on this phone, the app temporarily starts an HTTP file server so that the receiver can read the media over the same local network. This processing occurs only when you initiate casting. Media may be retrieved directly by the receiver from the original media server or from your phone; transport security depends on the media address, your local network, and the receiver.</p>
+
+<h2>7. System backup and migration</h2>
+<p>Android backup, restore, or device-migration features may process the app's private data according to your system settings. This processing is controlled by Android, the device manufacturer, and your system settings, not by HavenCast.</p>
+
+<h2>8. Deleting data</h2>
+<p>You can delete data stored in the app's private storage by clearing HavenCast's app data in Android settings or uninstalling HavenCast. Data already backed up or migrated by Android must be managed using the relevant system or device controls. Use Android advertising settings to delete or reset the advertising ID.</p>
+
+<h2>9. Policy updates</h2>
+<p>This policy will be updated when app features or data-processing practices change. The policy shown in the app is intended to match the policy available through the privacy-policy URL on the app-store listing.</p>
+
+<hr>
+<p class="meta">HavenCast · Contact the developer through More → About &amp; Feedback in the app.</p>
+
+</body>
+</html>
